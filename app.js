@@ -133,7 +133,7 @@ function showVerb(v) {
               <button class="fav-btn" onclick="event.stopPropagation(); toggleFavourite('${t.slug}')">
                 ${favourites.has(t.slug) ? '★' : '☆'}
               </button>
-              <audio id="${t.slug}-audio" src="audio/${t.slug}.mp3"></audio>
+              <audio id="${t.slug}-audio" src="${t.slug}.mpa"></audio>
             `
             : `Tap to reveal`
         }
