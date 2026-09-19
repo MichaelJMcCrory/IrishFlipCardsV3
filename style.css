@@ -1,0 +1,156 @@
+body {
+  font-family: sans-serif;
+  background: #FFFFFF;
+  color: #222;
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.controls input[type="text"] {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  min-width: 240px;
+  font-size: 16px;
+}
+
+.controls button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #1B5E20;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.dark .controls button {
+  background: #144d18;
+}
+
+/* Verb list cards */
+.verb-card {
+  width: 100%;
+  max-width: 480px;
+  margin: 14px auto;
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.dark .verb-card {
+  background: #1e1e1e;
+}
+
+/* Tense cards */
+.tense-row {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.tense-card {
+  width: 100%;
+  padding: 26px;
+  background: #FFFFFF;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+body.dark .tense-card {
+  background: #1e1e1e;
+}
+
+@media (min-width: 700px) {
+  .tense-row {
+    flex-direction: row;
+  }
+  .tense-card {
+    max-width: 340px;
+  }
+}
+
+/* Tense marker */
+.tense-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 16px;
+  color: white;
+}
+
+.tense-label.past { background: #1B5E20; }
+.tense-label.present { background: #999999; }
+.tense-label.future { background: #DAA520; }
+
+/* Audio button */
+.audio-btn {
+  margin-top: 16px;
+  background: #DAA520;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Favourite star */
+.fav-btn {
+  margin-top: 14px;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: gold;
+}
+
+/* Back button */
+.back-btn {
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  background: #1B5E20;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.dark .back-btn {
+  background: #144d18;
+}
