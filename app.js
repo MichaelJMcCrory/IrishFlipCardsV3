@@ -7,7 +7,7 @@ let currentVerb = null;
 const data = {
   "To see": [
     { tense:"Past",englishTense:"Saw",verbRoot:"Feic",question:"An bhfaca tú?",action:"Chonaic mé",negative:"Ní fhaca mé",phonQ:"fak-ah",phonA:"khun-ick",phonN:"nee fak-ah",slug:"see-past" },
-    { tense:"Present",englishTense:"See / Seeing",verbRoot:"Feic",question:"An bhfeiceann tú?",action:"Feicim",negative:"Ní fheicim",phonQ:"fek-unn",phonA:"fek-im",phonN:"nee fek-im",slug:"see-present" },
+    { tense:"Present",englishTense:"See ",verbRoot:"Feic",question:"An bhfeiceann tú?",action:"Feicim",negative:"Ní fheicim",phonQ:"fek-unn",phonA:"fek-im",phonN:"nee fek-im",slug:"see-present" },
     { tense:"Future",englishTense:"Will see",verbRoot:"Feic",question:"An bhfeicfidh tú?",action:"Feicfidh mé",negative:"Ní bhfeicfidh mé",phonQ:"fek-hee",phonA:"fek-hee",phonN:"nee fek-hee",slug:"see-future" }
   ],
 
